@@ -1,0 +1,53 @@
+:root {
+  --width-min: 1200px;
+  /* color */
+  --color-main: #da281f;
+  --color-sub: #c79e6a;
+  --color-white: #fff;
+  --color-black: #333;
+  --color-gray: #999;
+  --color-bg: #f5f5f5;
+  --color-white-bg: rgba(255, 255, 255, 0.2);
+  --color-black-bg: rgba(0, 0, 0, 0.5);
+  /* font-family */
+  --font-light: 'NanumSquareAcl', sans-serif;
+  --font-regular: 'NanumSquareAcr', sans-serif;
+  --font-bold: 'NanumSquareAcb', sans-serif;
+  --font-extra: 'NanumSquareAceb', sans-serif;
+  /* font-size */
+  --font-size-XS: 0.8rem;
+  --font-size-S: 1rem;
+  --font-size-M: 1.5rem;
+  --font-size-L: 2rem;
+  --font-size-XL: 3.5rem;
+  /* space */
+  --space-XS: 10px;
+  --space-S: 20px;
+  --space-M: 30px;
+  --space-L: 50px;
+  --space-section: 100px;
+}
+
+* {padding: 0; margin: 0; box-sizing: border-box;}
+html {font-family: var(--font-regular); font-size: 15px; color: var(--color-black);}
+a {display: block; width: 100%; text-decoration: none; color: inherit;}
+ul {list-style: none;}
+h1, h2, h3, h4, h5, h6 {font-weight: normal;}
+
+button {
+  background-color: transparent;
+  border: 1px solid var(--color-white);
+  outline: none;
+  font-family: var(--font-regular);
+  font-size: var(--font-size-S);
+  color: var(--color-white);
+}
+button.black {border: 1px solid var(--color-black);}
+button:hover {background-color: var(--color-white-bg);}
+button.black:hover {background-color: var(--color-black-bg);}
+
+.clear::after {
+  content: '';
+  display: block;
+  clear: both;
+}
